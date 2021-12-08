@@ -1,3 +1,3 @@
 # TIL
-https://images.velog.io/images/0715yk/post/b0a4b4b6-4ede-4c8c-9a40-02b36e0f5b6f/unnamed.jpg
-<center>나의 개발인생</center>
+<div style='center'>![image](https://user-images.githubusercontent.com/80584060/145153842-afe7e5fb-4ab6-4d45-8b8d-611f7a037961.png)</div>
+<div style='center'>나의 개발인생</div>
