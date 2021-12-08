@@ -26,9 +26,15 @@ artifactId: hello-spring
 Dependencies: Spring Web, Thymeleaf  
 
 ---
+>**[2021-12-09]**<br>
 **프로젝트 실행**  <br>
  ![img_2.png](img_2.png)<br>
  ![img_3.png](img_3.png)
  서버 포트 8070으로 변경했습니다.  
+
+---
+
+**스프링 부트 라이브러리 설정**
+
    
 
