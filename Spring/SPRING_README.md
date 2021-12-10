@@ -127,14 +127,15 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
     - @Autowired >> 로딩된 객체를 해당 변수에 집어 넣어
     - @Controller >>
 
-    ```java
+    ```
     @component
     Class A { // IOC ! 스프링이 메모리에 올려야겠네! 라고 생각한다고함 (어노테이션 기법)
     ;;
     };
-    ```
+  
+    
 
-    ```java
+    java
     @Autowired /*>> 나중에 스프링이 B클래스를 스캔할 때 B클래스 내부에 
     어떤 친구가 있는 지 분석하는 기법 >> (리플렉션)
     
