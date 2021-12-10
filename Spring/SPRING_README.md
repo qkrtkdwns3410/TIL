@@ -110,20 +110,64 @@ spring boot devtools - > https://velog.io/@bread_dd/Spring-Boot-Devtools
 > 
 #### 6. 스프링은 엄청나게 많은 어노테이션을 가지고 있다. (리플렉션 , 컴파일 체킹)
 
->1.컴파일 체킹 
+>1.컴파일 체킹   
 > 어노테이션 (주석 + 힌트) << 컴파일러가 무시하지 않습니다.  
 >  // 글(주석) << 컴파일러가 무시합니다. (주석+힌트)  
 > Animal{ run() }  Dog 상속 
-> Animal 
-> run
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
+> Animal  
+> run  
+>
+> Animal{ run() }
+Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
+
+@override fly() 사용시 >> 당연히 컴파일 단계에서 오류가 난다.
+>
+- 스프링 > 어노테이션 >> ~~객체 생성~~
+    - @Component >> 메모리에 로딩해!
+    - @Autowired >> 로딩된 객체를 해당 변수에 집어 넣어
+    - @Controller >>
+
+    ```java
+    @component
+    Class A { // IOC ! 스프링이 메모리에 올려야겠네! 라고 생각한다고함 (어노테이션 기법)
+    ;;
+    };
+    ```
+
+    ```java
+    @Autowired /*>> 나중에 스프링이 B클래스를 스캔할 때 B클래스 내부에 
+    어떤 친구가 있는 지 분석하는 기법 >> (리플렉션)
+    
+    리플렉션 :메서드 : 필드 : 어노테이션 */
+    Class B{
+    	//A a = new A(); >> 힙메모리에 새로운 객체를 만드는 것입니다
+    	
+    };
+    ```
+
+    - 런타임시에 리플렉션 기법이 시행됩니다
+
+---
+
+---
+
+### 7. 스프링은 MessageConverter를 가지고 있다. 기본값은 *JSON*
+
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eb091b16-b285-46ac-b919-1ec23fccb5a1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211210T114309Z&X-Amz-Expires=86400&X-Amz-Signature=dc88c32831a4ef8fba2f5b9a9f437361c436315371e955dbf7f3b94b1220f0a1&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+- 서로가 알아 들을 수 있는 언어로 번역하는 것이라 생각하면 편하다
+
+- 자바 Object >> JSON >> 파이썬 Object로 변경됩니다.
+
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f23d6dc2-1f54-444b-8d33-3a1f9d5b7537/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211210T114401Z&X-Amz-Expires=86400&X-Amz-Signature=e8d323b0df153d20c8499741ffd6707bddebcd0318a81d90f856a6d2370fd5f0&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+### 8. 스프링은 BufferedReader , BufferedWriter 를 자유롭게 사용이 가능하다.
+
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8df48b32-ddca-4635-b027-c0ac2a1784bd/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211210T115004Z&X-Amz-Expires=86400&X-Amz-Signature=6dc68d71f53ecee7970acc1b7546c0439a2898dedc7f53fc40ce7e9b01c5642f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+-InputStream : 바이트?! >> 문자 (Char) 로 캐스팅해서 처리해야합니다. : InputStreamReader  
+![img_9.png](img_9.png)
+
 <br>
 <br>
 <br>
