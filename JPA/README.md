@@ -26,12 +26,16 @@ JPA
 ---
 Java  
 Persistence  
-Application Programming interface  
->>자바 프로그램을 할때 영구적으로 데이터를 저장하기위해 필요한 인터페이스! >>JPA
+Application Programming Interface  
+>> 자바 프로그램을 할때 영구적으로 데이터를 저장하기위해 필요한 인터페이스 ! >> JPA
 
 
 - JPA는 ORM 기술입니다  
-    
+    >ORM 이란?
+  >> Object Relational Mapping  
+  > 나의 하인!  
+  >
+    > 
 
 <br>
 <br>
