@@ -227,7 +227,7 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 ###WEB.XML ?
 
 #### ServletContext의 초기 파라미터
-- 뭐야이거
+- 뭐야이
 #### Session의 유효시간 설정
 #### Servlet/JSP에 대한 정의
 #### Servlet/JSP 매핑
