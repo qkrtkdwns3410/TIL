@@ -224,7 +224,7 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 
 ![img_16.png](img_16.png)
 
-###WEB.XML ?
+### WEB.XML ?
 
 #### ServletContext의 초기 파라미터
 - 뭐야이
