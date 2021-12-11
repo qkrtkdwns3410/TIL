@@ -225,15 +225,22 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 ![img_16.png](img_16.png)
 
 ### WEB.XML ?
-
+- 문지기 !
 #### ServletContext의 초기 파라미터
-- 뭐야이
+- 초기 파라미터 : 암구호! `1234` <- 몰래 들어온 사람에 대한 체크!
 #### Session의 유효시간 설정
+- 웹에서 돌아다닐 수 있는 시간!  
+- 
 #### Servlet/JSP에 대한 정의
 #### Servlet/JSP 매핑
+- 해당 주소로 가라는 계시
 #### Mine Type 매핑
+- GET 방식 : select...(파라미터 有) // 들고온 데이터가 A 이라면
+    - 해당 데이터가 어떠한 데이터인지 파악하기 위한 정보가 담겨있는 것은  : Mine Type 이라고 합니다.    
 #### Welcome File list
+- 처음 입장시 들어가는 페이지
 #### Error Pages 처리
+-에러 페이지의 처리
 #### 리스너/ 필터 설정
 #### 보안
 
