@@ -34,8 +34,18 @@ Application Programming Interface
     >ORM 이란?
   >> Object Relational Mapping  
   > 나의 하인!  
-  >
+  >Class 
     > 
+![img_1.png](img_1.png)
+-    ORM <-> TRM (Table Relational Mapping) : 우리가 원래 사용하는 테이블 기반의 매핑 >테이블 생성(1) > 자바 클래스 (2)  
+       
+     
+    ORM은 자바 클래스 토대로 테이블을 조작할 수 있습니다 >자바 클래스(1) > 테이블 DML (2) - 상황이 역전됩니다.  
+![img_2.png](img_2.png)
+- Select , Select All , Delete , Update , Insert .. 되게 많이 반복하는 작업입니다..
+- 자바 > DB 신분 확인 후 > 세션을 오픈해줍니다 ... 자바가 Connection을 가진 후 ... DB에 쿼리를 전송할 수 있습니다. (원래)
+- JPA 는 모든 DML 문을 함수로 제공해서 반복적인 연결을 줄일 수 있습니다.
+    
 
 <br>
 <br>
