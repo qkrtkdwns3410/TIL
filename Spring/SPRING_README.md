@@ -219,6 +219,23 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 - picture / a => URI 방식 //Uniform Resource Indentifier 입니다.. //자바파일을 거쳐서 전달됩니다( 스프링 에서는 )
 
 ![img_15.png](img_15.png)
+- 톰캣에서 MAXTHREAD 제한이 20개 라면 . .. 아래 그림의 최초 요청이 스레드 20개가 채워질때 까지 반복됩니다.
+- 스레드가 20개 초과시 최초 요청에서 > flowChart `NO` 부분을 타며 스레드를 재사용합니다.
+
+![img_16.png](img_16.png)
+
+###WEB.XML ?
+
+#### ServletContext의 초기 파라미터
+- 뭐야이거
+#### Session의 유효시간 설정
+#### Servlet/JSP에 대한 정의
+#### Servlet/JSP 매핑
+#### Mine Type 매핑
+#### Welcome File list
+#### Error Pages 처리
+#### 리스너/ 필터 설정
+#### 보안
 
 
 
