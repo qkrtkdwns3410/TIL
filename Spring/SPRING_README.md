@@ -213,6 +213,12 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 - 서블릿 컨테이너 요청을 받고
 1) 최초 요청이라면 메모리 로딩 . 객체 생성 . 초기화
 
+![img_14.png](img_14.png)
+
+- a.png => URL 방식 // 스프링에서는 URL방식은 막혀 있습니다.
+- picture / a => URI 방식 //Uniform Resource Indentifier 입니다.. //자바파일을 거쳐서 전달됩니다( 스프링 에서는 )
+
+![img_15.png](img_15.png)
 
 
 
