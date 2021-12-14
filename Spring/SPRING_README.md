@@ -265,9 +265,11 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
     - FrontController 패턴을 직접짜거나 RequestDispatcher를 직접 구현 할 필요가 없다. 
         왜냐하면 스프링에는 DispatchServlet 이 있기 때문이다! 
 
-    -DispatchServlet은 FrontController 패턴 + RequestDispatcher 이다.
+    - 5200 
 
-    - DispatchServlet 이 자동 생성될 때 , 수 많은 객체가 생성 (IoC) 된다 .
+    - DispatchServlet은 FrontController 패턴 + RequestDispatcher 이다. 
+
+    - DispatchServlet 이 자동 생성될 때 , 수 많은 객체가 생성 (IoC) 된다. 
         보통 필터들인데.. 여기에서 필터들은 내가 직접 등록 할 수도 있고 
         기본적으로 필요한 필터들은 자동으로 등록된다.
 
@@ -277,12 +279,33 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 
 1. ApplicationContext
     - 수 많은 객체들이 ApplicationContext 에 등록된다. 이것을 IoC라고 부른다.
-    - 
+    - IoC : 제어의 역전 -DispatchServlet >> ComponentScan >> IoC 가 적용됩니다
+    - 개발자가 직접 new로 객체 생성 > 해당 객체를 가르키는 레퍼런스 변수를 관리 X
+        - 스프링이 직접 해당 객체 관리 . > 주소를 몰라도 상관 X > 필요할 때  DI 하면 됨.
+        - DI : 의존성 주입
+            - 필요한 곳에서 ApplicationContext에 접근하여 필요한 객체를 가져올 수 있음.
+            - ApplicationContext는 싱글톤으로 관리 > 어디서 접근하던 동일한 객체라는 것을 보장합니다
+    + 종류
+        1. Root-ApplicationContext
+        2. servlet-ApplicationContext
+    ![img_18.png](img_18.png)
+![img_17.png](img_17.png)
+2. Bean Factory
+    - 필요한객체를 Bean Factory 에 등록할 수도 있습니다 여기에 등록하면 초기에 메모리 로드 X
+    - 필요할 때 getBean() ... 이것 또한 IoC입니다..
+    - 필요할 때 DI도 가능
+    - ApplicationContext와 다른 점은 Bean Factory에 로드되는 객체들은 미리 로드 X
+        - 필요할 때 호출하여 로드하기 때문에 Lazy-loading이 됩니다.
 
+### 요청 주소에 따른 적절한 컨트롤러 요청 (Handler Mapping)
 
+- GET 요청 > http://localhost:8080/post/1
+- 해당 주소 요청이 오는 경우 적절한 컨트롤러의 함수를 찾아 실행
 
+### 응답
 
-
+- html파일을 응답할 지 Data를 응답할 지에 대한 결정 >> html파일을 응답하게 되면 , ViewResolver가 관여
+- Data를 응답 > MessageConverter 작동
 
 
 
