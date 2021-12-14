@@ -10,7 +10,7 @@
 > <br>
 > spring.io 사이트에서 SPRING BOOT 파일을 다운받습니다.
 > <br>https://start.spring.io/
-> ![img_1.png](img_1.png)
+> ![img_1.png](img_1.png) 
 > **설정**  
 > 
 >
@@ -27,6 +27,7 @@ Dependencies: Spring Web, Thymeleaf
 
 ---
 >**[2021-12-09]**<br>
+> 
 **프로젝트 실행**  <br>
  ![img_2.png](img_2.png)<br>
  ![img_3.png](img_3.png)
@@ -245,8 +246,38 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 - a입장시 a 의 신분을 확인합니다 > 필터링
 - 조건이 맞는 경우 바로 해당 연결을 받아들이는 것 > 리스너
 #### 보안
-- 
+- .....
 
+
+### Dispatcher Servlet 이란?
+
+#### 1. FrontController 패턴
+    - 최초 앞단에서 request 요청을 받아서 필요한 클래스에 넘겨준다.
+        => web.xml에 정의하기가 힘듭니다.
+
+    - 이때 새로운 요청이 생기기 때문에 request와 response가 새롭게 new 될 수 있습니다. 
+    - 그래서 아래의 RequestDispatcher가 필요합니다
+
+#### 2. RequestDispatcher
+    - 필요한 클래스 요청이 도달 했을 때 FrontController에 도착한 Req 과 Res 를 그대로 유지 시켜줍니다.
+
+#### 3. DispatchServlet
+    - FrontController 패턴을 직접짜거나 RequestDispatcher를 직접 구현 할 필요가 없다. 
+        왜냐하면 스프링에는 DispatchServlet 이 있기 때문이다! 
+
+    -DispatchServlet은 FrontController 패턴 + RequestDispatcher 이다.
+
+    - DispatchServlet 이 자동 생성될 때 , 수 많은 객체가 생성 (IoC) 된다 .
+        보통 필터들인데.. 여기에서 필터들은 내가 직접 등록 할 수도 있고 
+        기본적으로 필요한 필터들은 자동으로 등록된다.
+
+
+### 스프링 컨테이너란??
+ DispatchServlet 에 의해 생성되어지는 수 많은 객체들은 어디에서 관리??
+
+1. ApplicationContext
+    - 수 많은 객체들이 ApplicationContext 에 등록된다. 이것을 IoC라고 부른다.
+    - 
 
 
 
