@@ -306,7 +306,9 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 
 - html파일을 응답할 지 Data를 응답할 지에 대한 결정 >> html파일을 응답하게 되면 , ViewResolver가 관여
 - Data를 응답 > MessageConverter 작동
-
+![img_19.png](img_19.png)
+    - html파일의 경우 뷰 리졸버 관여 >> prefix..를 통해 적절한 jsp 반환.
+    - @ResponseBody ... 객체등을 Json 형태로 전달도 가능합니다.
 
 
 
