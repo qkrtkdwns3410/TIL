@@ -311,11 +311,23 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
     - @ResponseBody ... 객체등을 Json 형태로 전달도 가능합니다.
 
 
+## **Spring boot vs Spring
 
+스프링 부트는 스프링 프레임워크에서의 모든 설정을 간결화하기 위하여 사용하는 것입니다.
 
+## Spring Boot 실행 준비..
 
+### 1. Java 설치
+1. Chocolatey 이용 ( Scoop 이랑 비슷한 거 같음. )
+    - Open JDK 설치...
+   ![img_20.png](img_20.png)
+    - 검색해서 ... JDK 와 Maven 설치
+### Thymeleaf
+    -공홈 DOCS 참고..
+![img_21.png](img_21.png)
 
-
+- Link 의 경우 해당 타임리프가 해당 link의 주소를 /css ... 로 표현되도록 변환해줍니다.
+- th:text ... 말그대로 입니다. >> 다국어 설정하는 경우 사용합니다.
 
 
 
