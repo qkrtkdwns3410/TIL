@@ -337,6 +337,18 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 게시물 작성 반영 (리다이렉트)
 ![img_24.png](img_24.png)
 
+
+게시물 수정  
+![img_25.png](img_25.png)  
+![img_26.png](img_26.png)
+![img_27.png](img_27.png)
+
+### 에러사항...
+1. JPA는 메서드명이 획일화 되어있다.!
+    - findByTitleOrContent인 경우 올바른 title 이나 Content를 들고오지만
+    - findTitleOrContent 인 경우 파라메터명을 올바르게 인식하지 못하고 findTitle이라는 파라메터를 찾는 바보같은 짓을 한다...
+
+
 <br>
 <br>
 <br>
