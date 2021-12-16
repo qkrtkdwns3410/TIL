@@ -348,6 +348,8 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
     - findByTitleOrContent인 경우 올바른 title 이나 Content를 들고오지만
     - findTitleOrContent 인 경우 파라메터명을 올바르게 인식하지 못하고 findTitle이라는 파라메터를 찾는 바보같은 짓을 한다...
 
+2. 
+
 
 <br>
 <br>
