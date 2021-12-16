@@ -83,6 +83,8 @@ Application Programming Interface
 ### JPA는 쉽지만 어렵습니다..
  #### OOP방식의 처리와 새로운 개념으로 어려울 수 있습니다. >> 방대한 데이터의 처리의 경우 내부적인 쿼리가 쓸모없는 SELECT를 날리기에 위험할 수도 있습니다.
 
+## Spring Data JPA  -- Hibernate
+  - 실제로 ORM 을 구현한 친구는 Hibernate입니다.
 
 <br>
 <br>
