@@ -329,7 +329,13 @@ Dog 상속 >> @override Animal { run ()}  >> 컴파일 (Dog)
 - Link 의 경우 해당 타임리프가 해당 link의 주소를 /css ... 로 표현되도록 변환해줍니다.
 - th:text ... 말그대로 입니다. >> 다국어 설정하는 경우 사용합니다.
 
+게시물 조회  
+![img_22.png](img_22.png)
 
+게시물 작성  
+![img_23.png](img_23.png)
+게시물 작성 반영 (리다이렉트)
+![img_24.png](img_24.png)
 
 <br>
 <br>

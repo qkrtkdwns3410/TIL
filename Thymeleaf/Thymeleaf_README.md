@@ -40,8 +40,9 @@
    - 
 3. 타임리프 .. each문 돌리는법
    - ![img_3.png](img_3.png)
+   -![img_4.png](img_4.png)
 
-
+4.게시물 작성
 
 
 
