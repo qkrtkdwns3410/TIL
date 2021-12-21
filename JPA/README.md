@@ -2,7 +2,7 @@
 
 ### 1. JPA 란?
 
-###JPA 는 Java Persistence API 이다.  
+### JPA 는 Java Persistence API 이다.  
 > 영속성이란?
 >> RAM (전기) 휘발성 : 컴퓨터가 OFF 되면 사라집니다!..  
 > 램의 기억을 하드디스크에 저장함 > **어떠한 데이터가 영구히 기록 되는 것입니다.**  
@@ -30,7 +30,7 @@ Application Programming Interface
 >> 자바 프로그램을 할때 영구적으로 데이터를 저장하기위해 필요한 인터페이스 ! >> JPA
 
 
-###JPA는 ORM 기술입니다  
+### JPA는 ORM 기술입니다  
 
     >ORM 이란?
   >> Object Relational Mapping  
@@ -47,9 +47,9 @@ Application Programming Interface
 - 자바 > DB 신분 확인 후 > 세션을 오픈해줍니다 ... 자바가 Connection을 가진 후 ... DB에 쿼리를 전송할 수 있습니다. (원래)
 - JPA 는 모든 DML 문을 함수로 제공해서 반복적인 연결을 줄일 수 있습니다.
     
-###JPA는 영속성 컨텍스트를 가지고 있다.
-####영속성 : 데이터 -> 영구적으로 저장하게 해주는 속성입니다. (DB저장 -- Oracle...MySQL...)
-####컨텍스트 : context -> 
+### JPA는 영속성 컨텍스트를 가지고 있다.
+#### 영속성 : 데이터 -> 영구적으로 저장하게 해주는 속성입니다. (DB저장 -- Oracle...MySQL...)
+#### 컨텍스트 : context -> 
 >![img_3.png](img_3.png)  
 자바 > 영속성  컨텍스트 > DB    
 > `과일 데이터` SELECT -> 영속성 컨텍스트에 `과일데이터`를 달라고 요청 -> DB에서 `과일데이터`를 SELECT
@@ -70,13 +70,13 @@ Application Programming Interface
 
 
 
-###JPA - OOP 관점에서 모델링을 할 수 있게 해줍니다. (상속 , 컴포지션 , 연관관계)
+### JPA - OOP 관점에서 모델링을 할 수 있게 해줍니다. (상속 , 컴포지션 , 연관관계)
 ![img_10.png](img_10.png)
 ![img_11.png](img_11.png)
 
 - 공통되는 클래스를 별도로 빼서 상속하게 한 뒤에 사용이 가능합니다. (**상속**)
 
-###방언 처리가 용이하여 Migration하기가 좋습니다. 유지보수에서도 탁월함
+### 방언 처리가 용이하여 Migration하기가 좋습니다. 유지보수에서도 탁월함
 
 #### - MySQL -- ORACLE 간의 Ansii Join.. Sql문법의 차이가 존재하는데 JPA는 적은 코드의 변경만으로도 마이그레이션이 가능해집니다. 
 
